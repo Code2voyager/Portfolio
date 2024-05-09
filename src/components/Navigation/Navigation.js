@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function Navigation() {
   return (
     <nav className="flex items-center justify-between flex-wrap bg-blue-950 p-2">
