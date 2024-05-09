@@ -1,11 +1,12 @@
 import React from 'react';
+import logo from '../../assets/NS.svg';
 
 
 function Navigation() {
   return (
     <nav className="flex items-center justify-between flex-wrap bg-blue-950 p-2">
   <div  className="flex item-center flex-shrink-0 text-white ml-6 sm:min-w-0" >
-    <img src="/NS.png" className=" font-semibold tracking-tight" alt="Description of the image" />
+    <img src={logo}  className=" font-semibold tracking-tight" alt="" />
   </div>
   <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
     <div className="text-xl lg:flex-grow">
