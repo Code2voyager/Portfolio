@@ -3,6 +3,7 @@ import profile from './profile1.jpg';
 import Skills from '../Skills/Skills';
 import Experience from '../Experience/Experience';
 import About from '../About/About';
+import Projects from '../Projects/Projects';
 
 function Homepage() {
   return (
@@ -27,6 +28,7 @@ function Homepage() {
    
       <Skills/>
       <Experience/>
+      <Projects/>
     
     </>
   )

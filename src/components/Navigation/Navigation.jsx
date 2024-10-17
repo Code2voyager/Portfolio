@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import logo from '../../assets/NS.png';
-import mobile from '../../assets/icons8-iphone-14-64.png';
-import git from '../../assets/icons8-github-64.png';
-import Linkedin from '../../assets/icons8-linkedin-64.png';
+import { FaMobile } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 
 
@@ -54,17 +54,20 @@ function Navigation() {
         <li>
           <a href="#responsive-header" onClick={(e=>scrollToSection(e,'Exp'))} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Experiences</a>
         </li>
-       
+        <li>
+          <a href="#responsive-header" onClick={(e=>scrollToSection(e,'Projects'))} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+        </li>
         
       </ul>
       <div className="flex items-center  ">
-      <a href='548-333-0997' target='_blank' rel="noopener noreferrer">     
-          <img className=' object-scale-down h-9 ml-96' src={mobile} alt=""  href=""/>
+      <a href='548-333-0997' target='_blank' rel="noopener noreferrer">
+        <FaMobile className=' object-scale-down h-9 ml-96' size={40}/>     
      </a>
-       <a href='https://github.com/Code2voyager' target='_blank' rel="noopener noreferrer">
-       <img className='object-scale-down h-9 ml-2' src={git} alt="" />
-       </a>        <a href='https://www.linkedin.com/in/nidhishetty224' target='_blank' rel="noopener noreferrer">
-      <img className='object-scale-down h-9 ml-2' src={Linkedin} alt=""/>
+     <a href='https://github.com/Code2voyager' target='_blank' rel='noopener noreferrer'>
+      <FaGithub size={40} />
+    </a>
+      <a href='https://www.linkedin.com/in/nidhishetty224' target='_blank' rel="noopener noreferrer">
+      <FaLinkedin size={40} />
 
       </a>
       </div>
