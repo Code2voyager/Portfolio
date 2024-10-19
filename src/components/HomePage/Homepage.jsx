@@ -68,7 +68,7 @@ function Homepage() {
 
       <section id="skills" className="py-12">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-semibold text-center mb-6">Skills</h2>
+          <h2 className="text-3xl md:text-4xl underline text-center mb-6">SKILLS</h2>
           <p className="text-lg text-center mb-4">
             Here are some of the tools and technologies I’ve worked with
             throughout my development journey.
@@ -79,8 +79,8 @@ function Homepage() {
 
       <section id="experience" className="py-12">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-semibold text-center mb-6">
-            Experience
+          <h2 className="text-3xl md:text-4xl underline text-center mb-6">
+            EXPERIENCE
           </h2>
           <p className="text-lg text-center mb-4">
             Over the years, I’ve had the privilege of working on diverse
@@ -93,14 +93,14 @@ function Homepage() {
 
       <section id="projects" className="py-12">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-semibold text-center mb-6">Projects</h2>
+          <h2 className="text-3xl md:text-4xl underline text-center mb-6">PROJETCS</h2>
           <Projects />
         </div>
       </section>
 
       <section id="education" className="py-12">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-semibold text-center mb-6">Education</h2>
+          <h1 className="text-3xl md:text-4xl underline text-center mb-6">EDUCATION</h1>
           <Education />
         </div>
       </section>

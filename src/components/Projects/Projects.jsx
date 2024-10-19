@@ -12,6 +12,7 @@ import {
 import { SiTypescript, SiFirebase } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { motion } from "framer-motion";
+
 const mobile = require("../../assets/4781.jpg");
 const ecommerce1 = require("../../assets/4910241.jpg");
 const ecommerce2 = require("../../assets/4934538.jpg");
@@ -84,6 +85,7 @@ function Projects() {
   const handleMouseEnter = (id) => {
     setFlipped((prev) => ({ ...prev, [id]: true }));
   };
+
   const handleMouseLeave = (id) => {
     setFlipped((prev) => ({ ...prev, [id]: false }));
   };
@@ -91,11 +93,11 @@ function Projects() {
   return (
     <>
       <div id="Projects" className="flex items-center justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 p-6 lg:p-12 mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 lg:p-12 mx-auto">
           {projects.map((project) => (
             <motion.div
               key={project.id}
-              className="relative w-full h-80 flex justify-center items-center"
+              className="relative w-full flex justify-center items-center"
               onMouseEnter={() => handleMouseEnter(project.id)}
               onMouseLeave={() => handleMouseLeave(project.id)}
               style={{ perspective: 1000, cursor: "pointer" }}
@@ -108,7 +110,7 @@ function Projects() {
               }}
             >
               <motion.div
-                className="relative w-full h-full"
+                className="relative w-full"
                 animate={{ rotateY: flipped[project.id] ? 180 : 0 }}
                 transition={{ duration: 0.6 }}
                 style={{ transformStyle: "preserve-3d" }}
@@ -138,7 +140,6 @@ function Projects() {
                   </div>
                 </motion.div>
 
-                {/* Card flipping */}
                 <motion.div
                   className="absolute inset-0 bg-white text-black rounded-lg shadow-lg p-6 flex flex-col items-center justify-center"
                   style={{

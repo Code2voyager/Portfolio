@@ -32,9 +32,6 @@ function Experience() {
 
   return (
     <>
-      <h1 className="text-3xl md:text-4xl mb-6 underline font-sans flex flex-col items-center justify-center">
-        EXPERIENCE
-      </h1>
       <motion.div
         ref={ref}
         initial={{ opacity: 0, scale: 0.5 }}
