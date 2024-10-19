@@ -1,20 +1,31 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { SiAngular, SiReact, SiTypescript, SiHtml5, SiCss3, SiBootstrap, SiMongodb, SiAndroid, SiMysql, SiGit } from 'react-icons/si';
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  SiAngular,
+  SiReact,
+  SiTypescript,
+  SiHtml5,
+  SiCss3,
+  SiBootstrap,
+  SiMongodb,
+  SiAndroid,
+  SiMysql,
+  SiGit,
+} from "react-icons/si";
 import { FaJava } from "react-icons/fa6";
 function Skills() {
   const skillLevels = [
-    { icon: <SiAngular size={32} />, level: '80%' },
-    { icon: <SiReact size={32} />, level: '80%' },
-    { icon: <SiTypescript size={32} />, level: '75%' },
-    { icon: <FaJava size={32} />, level: '75%' },
-    { icon: <SiHtml5 size={32} />, level: '80%' },
-    { icon: <SiCss3 size={32} />, level: '80%' },
-    { icon: <SiBootstrap size={32} />, level: '80%' },
-    { icon: <SiMongodb size={32} />, level: '60%' },
-    { icon: <SiAndroid size={32} />, level: '60%' },
-    { icon: <SiMysql size={32} />, level: '67%' },
-    { icon: <SiGit size={32} />, level: '60%' },
+    { icon: <SiAngular size={32} />, level: "80%" },
+    { icon: <SiReact size={32} />, level: "80%" },
+    { icon: <SiTypescript size={32} />, level: "75%" },
+    { icon: <FaJava size={32} />, level: "75%" },
+    { icon: <SiHtml5 size={32} />, level: "80%" },
+    { icon: <SiCss3 size={32} />, level: "80%" },
+    { icon: <SiBootstrap size={32} />, level: "80%" },
+    { icon: <SiMongodb size={32} />, level: "60%" },
+    { icon: <SiAndroid size={32} />, level: "60%" },
+    { icon: <SiMysql size={32} />, level: "67%" },
+    { icon: <SiGit size={32} />, level: "60%" },
   ];
 
   const containerVariants = {
@@ -22,7 +33,7 @@ function Skills() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { staggerChildren: 0.2, ease: 'easeInOut' },
+      transition: { staggerChildren: 0.2, ease: "easeInOut" },
     },
   };
 
@@ -33,9 +44,9 @@ function Skills() {
 
   const barVariants = {
     hidden: { width: 0 },
-    visible: level => ({
+    visible: (level) => ({
       width: level,
-      transition: { duration: 1.5, ease: 'easeInOut' },
+      transition: { duration: 1.5, ease: "easeInOut" },
     }),
   };
 
@@ -47,13 +58,6 @@ function Skills() {
       animate="visible"
       variants={containerVariants}
     >
-      <motion.h1
-        className="text-3xl md:text-4xl mb-6 underline font-sans flex flex-col items-center justify-center"
-        variants={itemVariants}
-      >
-        SKILLS
-      </motion.h1>
-
       <motion.div className="flex justify-center items-center mb-4 mt-2">
         <motion.div className="sm:w-2/3 w-full flex flex-col">
           {skillLevels.map((skill, index) => (

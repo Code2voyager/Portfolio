@@ -3,7 +3,7 @@ import logo from '../../assets/NS.png';
 import { FaMobile } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-
+import { MdOutlineMailOutline } from "react-icons/md";
 
 
 function Navigation() {
@@ -46,16 +46,16 @@ function Navigation() {
           <a href="#responsive-header" onClick={(e=>scrollToSection(e,'Home'))} className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
         </li>
         <li>
-          <a href="#responsive-header" onClick={(e=>scrollToSection(e,'About'))} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Me</a>
+          <a href="#responsive-header" onClick={(e=>scrollToSection(e,'About'))} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer ">About Me</a>
         </li>
         <li>
-          <a href="#responsive-header" onClick={(e=>scrollToSection(e,'Skills'))} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Skills</a>
+          <a href="#responsive-header" onClick={(e=>scrollToSection(e,'Skills'))} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer ">Skills</a>
         </li>
         <li>
-          <a href="#responsive-header" onClick={(e=>scrollToSection(e,'Exp'))} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Experiences</a>
+          <a href="#responsive-header" onClick={(e=>scrollToSection(e,'Exp'))} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer ">Experiences</a>
         </li>
         <li>
-          <a href="#responsive-header" onClick={(e=>scrollToSection(e,'Projects'))} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+          <a href="#responsive-header" onClick={(e=>scrollToSection(e,'Projects'))} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer ">Projects</a>
         </li>
         
       </ul>
@@ -66,10 +66,13 @@ function Navigation() {
      <a href='https://github.com/Code2voyager' target='_blank' rel='noopener noreferrer'>
       <FaGithub size={40} />
     </a>
-      <a href='https://www.linkedin.com/in/nidhishetty224' target='_blank' rel="noopener noreferrer">
-      <FaLinkedin size={40} />
+      <a href='www.linkedin.com/in/nidhis224' target='_blank' rel="noopener noreferrer">
+      <FaLinkedin size={40} color='#000080' />
 
       </a>
+      <a href=' mailto:nidhi1709shetty@gmail.com' target='_blank' rel="noopener noreferrer">
+        <MdOutlineMailOutline  size={42} color='#ff4949' />     
+     </a>
       </div>
       
     </div>

@@ -2,27 +2,30 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 function Experience() {
-  const ref = useRef(null); 
-  const [inView, setInView] = useState(false); 
+  const ref = useRef(null);
+  const [inView, setInView] = useState(false);
 
   useEffect(() => {
-    
-    const observer = new IntersectionObserver(([entry]) => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
         if (entry.isIntersecting) {
-          setInView(true); 
-          observer.disconnect(); 
+          setInView(true);
+          observer.disconnect();
         }
       },
       {
         threshold: window.innerWidth < 768 ? 0.2 : 1.0,
       }
-    ); 
-    if (ref.current) {
-      observer.observe(ref.current);
+    );
+    const currentRef = ref.current;
+
+    if (currentRef) {
+      observer.observe(currentRef);
     }
+
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -34,20 +37,20 @@ function Experience() {
       </h1>
       <motion.div
         ref={ref}
-        initial={{ opacity: 0, scale: 0.5 }} 
-        animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }} 
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
         transition={{
-          duration: window.innerWidth < 768 ? 0.5 : 0.8, 
-          delay: window.innerWidth < 768 ? 0 : 0.5, 
+          duration: window.innerWidth < 768 ? 0.5 : 0.8,
+          delay: window.innerWidth < 768 ? 0 : 0.5,
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
         <div
           id="Exp"
-          className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 mt-3 p-4 mx-auto bg-white border-2 border-blue-950 rounded-lg shadow-2xl dark:bg-gray-800 dark:border-gray-700"
+          className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 mt-3 p-4 mx-auto bg-transparent border-2 border-blue-950 rounded-lg shadow-2xl dark:bg-gray-800 dark:border-gray-700"
         >
           <h5 className="mb-2 flex flex-col items-center text-xl sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Reliance Jio Pvt Ltd
+            Reliance Digital Jio Pvt Ltd
           </h5>
           <ul className="mb-3 list-none pl-0">
             {[
