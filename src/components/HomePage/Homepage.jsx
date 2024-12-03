@@ -40,8 +40,8 @@ function Homepage() {
             </p>
             <div className="flex mt-6 space-x-4">
               <a
-                href="/Nidhi_Shetty_Software_Developer.pdf"
-                download="Nidhi_Shetty_Resume"
+                href="/Nidhi Shetty_Software Engineer.pdf"
+                download="Nidhi Shetty_Software Engineer"
                 className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-800"
               >
                 Download Resume

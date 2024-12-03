@@ -41,25 +41,42 @@ function Navigation() {
         </svg>
     </button>
     <div className={` w-full md:flex md:w-auto items-center  justify-between mx-auto ${isopen ? '' :'hidden'}`} id='navbar-default'>
-      <ul className="font-semibold text-lg flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8  md:mt-0 md:border-0 md:bg-gray dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <ul className="font-semibold text-lg flex flex-col p-4 md:p-0 mt-4 border hover:cursor-pointer border-gray-100 rounded-lg  md:flex-row md:space-x-8  md:mt-0 md:border-0 md:bg-gray dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
-          <a href="#responsive-header" onClick={(e=>scrollToSection(e,'Home'))} className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+          <a href="#responsive-header" 
+          onClick={(e=>scrollToSection(e,'Home'))} 
+          className="block py-2 px-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page"
+          >
+          Home
+          </a>
         </li>
         <li>
-          <a href="#responsive-header" onClick={(e=>scrollToSection(e,'About'))} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer ">About Me</a>
+          <a href="#responsive-header" 
+          onClick={(e=>scrollToSection(e,'About'))} 
+          className="block py-2 px-4 text-gray-900 rounded  hover:bg-gray-100  md: hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent  transition duration-200"
+          >
+            About Me
+            </a>
         </li>
         <li>
-          <a href="#responsive-header" onClick={(e=>scrollToSection(e,'Skills'))} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer ">Skills</a>
+          <a href="#responsive-header" onClick={(e=>scrollToSection(e,'Skills'))}
+           className="block py-2 px-4 text-gray-900 rounded  hover:bg-gray-100 md:  hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-200"
+           >
+            Skills</a>
         </li>
         <li>
-          <a href="#responsive-header" onClick={(e=>scrollToSection(e,'Exp'))} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer ">Experiences</a>
+          <a href="#responsive-header" onClick={(e=>scrollToSection(e,'Exp'))} className="block py-2 px-4 text-gray-900 rounded  hover:bg-gray-100 md:  hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-200"
+            >
+              Experiences</a>
         </li>
         <li>
-          <a href="#responsive-header" onClick={(e=>scrollToSection(e,'Projects'))} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer ">Projects</a>
+          <a href="#responsive-header" onClick={(e=>scrollToSection(e,'Projects'))} className="block py-2 px-4 text-gray-900 rounded  hover:bg-gray-100 md:  hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent  transition duration-200"
+            >
+              Projects</a>
         </li>
         
       </ul>
-      <div className="flex items-center  ">
+      <div className="flex items-center hover:cursor-pointer ">
       <a href='548-333-0997' target='_blank' rel="noopener noreferrer">
         <FaMobile className=' object-scale-down h-9 ml-96' size={40}/>     
      </a>
