@@ -83,7 +83,7 @@ function Navigation() {
      <a href='https://github.com/Code2voyager' target='_blank' rel='noopener noreferrer'>
       <FaGithub size={40} />
     </a>
-      <a href='www.linkedin.com/in/nidhis224' target='_blank' rel="noopener noreferrer">
+      <a href='https://www.linkedin.com/in/nidhis224/' target='_blank' rel="noopener noreferrer">
       <FaLinkedin size={40} color='#000080' />
 
       </a>
